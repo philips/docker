@@ -43,7 +43,7 @@ func main() {
 		flMtu                = flag.Int("mtu", docker.DefaultNetworkMtu, "Set the containers network mtu")
 	)
 	flag.Var(&flDns, "dns", "Force docker to use specific DNS servers")
-	flag.Var(&flHosts, "H", "Multiple tcp://host:port or unix://path/to/socket to bind in daemon mode, single connection otherwise")
+	flag.Var(&flHosts, "H", "tcp://host:port, unix://path/to/socket, fd://* or fd://socketfd to use in daemon mode. Multiple sockets can be specified.")
 
 	flag.Parse()
 
