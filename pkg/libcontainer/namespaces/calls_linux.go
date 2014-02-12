@@ -8,7 +8,6 @@ import (
 )
 
 const (
-	SYS_SETNS  = 308 // look here for different arch http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=7b21fddd087678a70ad64afc0f632e0f1071b092
 	TIOCGPTN   = 0x80045430
 	TIOCSPTLCK = 0x40045431
 )
